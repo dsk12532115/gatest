@@ -7,7 +7,6 @@ import GoogleTagManager, {
 
 export default function Home() {
   return (
-<GoogleTagManager googleTagManagerId={googleTagManagerId as GoogleTagManagerId} />
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
