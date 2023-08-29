@@ -1,8 +1,13 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import { googleTagManagerId } from '../utils/gtm';
+import GoogleTagManager, {
+  GoogleTagManagerId,
+} from '../components/GoogleTagManager';
 
 export default function Home() {
   return (
+<GoogleTagManager googleTagManagerId={googleTagManagerId as GoogleTagManagerId} />
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
